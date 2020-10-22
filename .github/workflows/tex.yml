@@ -16,7 +16,15 @@ jobs:
         uses: reitermarkus/aspell@master
         with:
           files: '*.tex'
-          args: --lang en_GB --mode tex --personal ./aspell.en_GB.pws --add-tex-command PassOptionsToPackage\ pp --add-tex-command texttt\ op --add-tex-command cite\ op --add-tex-command german\ p
+          args: >
+            --encoding UTF-8
+            --lang en_GB
+            --mode tex
+            --personal ./aspell.en_GB.pws
+            --add-tex-command PassOptionsToPackage\ pp
+            --add-tex-command texttt\ op
+            --add-tex-command cite\ op
+            --add-tex-command usefonttheme\ op
       - name: Compile Paper
         uses: reitermarkus/latexmk@master
       - name: Prepare Paper for Publishing
