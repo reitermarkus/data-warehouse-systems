@@ -1,0 +1,41 @@
+\documentclass{article}
+
+\linespread{1.1}
+
+\raggedbottom
+
+\usepackage{float}
+
+\input{common.tex}
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{nameref}
+
+\addto\extrasenglish{
+  \def\sectionautorefname{Section}
+}
+
+\usepackage[
+  style   = numeric,
+  sorting = none,
+]{biblatex}
+\bibliography{paper}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Introduction}
+\label{sec:introduction}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+\newpage
+\printbibliography
+
+\end{document}
