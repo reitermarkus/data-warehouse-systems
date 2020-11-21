@@ -33,3 +33,23 @@ https://www.xplenty.com
 ## Tableau
 
 https://www.tableau.com
+
+
+## Snowflake
+
+https://www.snowflake.com/
+
+
+## AWS Redshift
+
+https://aws.amazon.com/de/redshift/
+
+
+## Google BigQuery
+
+https://cloud.google.com/bigquery
+
+
+## IBM DB2
+
+https://www.ibm.com/analytics/db2
