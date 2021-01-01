@@ -1,9 +1,6 @@
 name: TeX
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   tex:
@@ -15,7 +12,7 @@ jobs:
       - name: Check Spelling
         uses: reitermarkus/aspell@master
         with:
-          files: '*.tex'
+          files: '*.tex */*.tex'
           args: >
             --encoding UTF-8
             --lang en_GB
@@ -25,6 +22,7 @@ jobs:
             --add-tex-command texttt\ op
             --add-tex-command cite\ op
             --add-tex-command usefonttheme\ op
+            --add-tex-command subfile\ op
       - name: Compile Paper
         uses: reitermarkus/latexmk@master
       - name: Prepare Paper for Publishing
@@ -32,6 +30,7 @@ jobs:
           mkdir -p gh-pages
           mv *.pdf gh-pages/
       - name: Publish Paper
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           BRANCH: gh-pages
