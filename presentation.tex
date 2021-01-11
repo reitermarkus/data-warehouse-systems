@@ -4,6 +4,9 @@
 
 \usefonttheme{professionalfonts}
 \usepackage[familydefault,light]{Chivo}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc,positioning}
 
 \input{common.tex}
 
@@ -119,7 +122,34 @@
   \end{frame}  
   
   \begin{frame}{Tableau}
-
+		\begin{itemize}
+          \item Data visualisation \& data reporting with help of machine learning
+          \item Tableau Software Inc. offers a tool for every step in the analytics/business intelligence (BI) cycle:
+          \begin{itemize}
+         		\item \textbf{Transactions Stored} - no actual database - data is stored in \textit{.tde} or \textit{.hyper} files
+         		\item \textbf{Data Analysed}
+         		\begin{itemize}
+         			\item Data Preparation - \textit{Tableau Prep Builder}
+         			\item Analysis \& Explore - \textit{Tableau Desktop} \& \textit{Tableau Public}
+         		\end{itemize}
+         		\item \tikz[remember picture] \node[coordinate,yshift=0.5em] (n1) {};\textbf{Insights Shared}
+         		\item \textbf{Decisions Made}
+         		\item \tikz[remember picture] \node[coordinate] (n2) {};\textbf{Outcomes Monitored}
+         		\begin{itemize}
+         			\item Safety \& Security - \textit{Tableau Server} \& \textit{Tableau Online} \& \textit{Tableau Mobile}
+         			\item Collaboration -- \textit{Tableau Server} \& \textit{Tableau Online} \& \textit{Tableau Mobile}
+         			\item Stability -- \textit{Tableau Server} \& \textit{Tableau Online} \& \textit{Tableau Mobile}
+         			\item Data center or Cloud -- \textit{Tableau Server} \& \textit{Tableau Online} \& \textit{Tableau Mobile}
+         		\end{itemize}
+          \end{itemize}          
+        \end{itemize}
+        
+         \begin{tikzpicture}[overlay,remember picture]
+  			\node[coordinate, left=2em of n1] (n3){};
+  			\node[coordinate, left=2em of n2] (n4){};
+        	\draw[thick,decorate,decoration={brace,amplitude=3pt}] (n4) -- (n3) node[midway, left=7pt] {};
+  		\end{tikzpicture}
+  		
   \end{frame}
   
   \begin{frame}{SERVICE STEFANIE}
