@@ -6,7 +6,7 @@ For small and medium businesses, probably the most important aspect when
 choosing a data warehouse system is cost, both for the initial development and
 for the ongoing maintenance of such a system.
 
-Nowadays, Software as a Service (SaaS) can provide many advantages over
+Nowadays, software as a service (SaaS) can provide many advantages over
 traditional services. The pay-as-you-go model is very friendly towards small
 businesses which could not otherwise easily justify the upfront cost for
 servers and related costs for hosting a data warehouse.
@@ -17,7 +17,7 @@ traditional services, SaaS products virtually don't need any setup time and
 can be deployed instantly.
 
 In the case of data warehouse systems, SaaS is also commonly referred to as
-Data Warehouse as a Service (DWaaS).
+data warehouse as a service (DWaaS).
 
 Given the advantages above, we focus in this section on some concrete DWaaS
 products and review what they have in common, how they differ and whether they
@@ -25,45 +25,175 @@ are in fact suitable for small businesses.
 
 \subsection{Segment (by Twilio)}
 
-Segment is a customer data platform for collecting, cleaning and controlling data across multiple services in one central location. It offers a \textit{Free} plan which supports two data sources, 1,000 API calls and 300+ integrations, a \textit{Team} plan starting at \$120/month for 10 users with unlimited data sources and 10,000 API calls up to \$1,125/month for 100,000 API calls, and a \textit{Business} plan for custom usage requirements. The scalable \textit{Team} plan should be sufficient for most SMEs.
+Segment is a customer data platform for collecting, cleaning and controlling
+data across multiple services in one central location. It offers a
+\textit{Free} plan which supports two data sources, 1,000 API calls and more
+than 300 integrations, a \textit{Team} plan starting at \$120/month for 10
+users with unlimited data sources and 10,000 API calls up to \$1,125/month for
+100,000 API calls, and a \textit{Business} plan for custom usage requirements.
+The scalable \textit{Team} plan should be sufficient for most SMEs.
 
-After first logging into Segment, the user can choose the team they are working on (Engineering, Marketing, Founder/Executive, Product, Analytics) and select the first data source, e.g. a website, programming language or HTTP API. Next, data destinations have to be selected, e.g. Google Analytics, Intercom, etc. Finally, the user gets to the dashboard, which provides an overview of all data sources and destinations and a way to add new ones.
+After first logging into Segment, the user can choose the team they are working
+on (Engineering, Marketing, Founder/Executive, Product, Analytics) and select
+the first data source, e.g. a website, programming language or HTTP API. Next,
+data destinations have to be selected, e.g. Google Analytics, Intercom, etc.
+Finally, the user gets to the dashboard, which provides an overview of all data
+sources and destinations and a way to add new ones.
 
-In total, Segment supports 98 different data sources and 650 data destinations at the time of writing. Additionally, creating custom data sources and destinations by building JavaScript function that access the corresponding API. Also, by supporting programming languages as data source and webhooks as data destinations, virtually any software can be integrated.
+In total, Segment supports 98 different data sources and 650 data destinations
+at the time of writing. Additionally, creating custom data sources and
+destinations by building JavaScript function that access the corresponding API.
+Also, by supporting programming languages as data source and webhooks as data
+destinations, virtually any software can be integrated.
 
-Segment does not offer any analytics capability on its own but is meant to simplify data collection and distribution by managing all data sources and destinations in a single place, therefore reducing complexity and increasing flexibility. For example, website analytics can be switched from Google Analytics~\cite{google_analytics} to GoSquared~\cite{gosquared} without changing the website itself.
+Segment does not offer any analytics capability on its own but is meant to
+simplify data collection and distribution by managing all data sources and
+destinations in a single place, therefore reducing complexity and increasing
+flexibility. For example, website analytics can be switched from
+Google~Analytics~\cite{google_analytics} to GoSquared~\cite{gosquared} without
+changing the website itself.
 
 \subsection{Panoply}
 
-\textit{Panoply} is a data warehouse solution build on \textit{AWS Redshift} and offers four plans: \textit{LITE}, \textit{STARTER}, \textit{PRO} and \textit{BUSINESS}. The last of them is specifically aimed at SMBs, according to their own website. There is a free version available for testing which has the functionality if the \textit{LITE} plan for a period of 14 days. After logging in for the first time, the website prompts a user to create a data warehouse, that is required to have a unique name. Next, a user is prompted with the possibility of adding a data source, which can also be skipped. Afterwards, the user has full access to the instance.
+Panoply is a data warehouse solution built on AWS Redshift and offers four
+plans: \textit{LITE}, \textit{STARTER}, \textit{PRO} and \textit{BUSINESS}. The
+last of them is specifically aimed at SMBs, according to their own website.
+There is a free version available for testing which has the functionality of
+the \textit{LITE} plan for a period of 14 days. After logging in for the first
+time, the website prompts the user to create a data warehouse with a unique
+name. Next, the user is prompted with the possibility of adding a data source,
+which can also be skipped. Afterwards, the user has full access to the
+instance.
 
-\textit{Panoply} offers the integration of 122 data sources that have been integrated by the Panoply team. Additionally, there are 131 data sources, which are developed by partners, that can be added. In total, 253 different data source are supported. To analyse the collected data, \textit{Panoply} offers the integration of 43 visualisation tools, of which 42 are \textit{BI} tools.
+Panoply offers 122 data sources that have been integrated by the Panoply team.
+Additionally, there are 131 data sources which are developed by partners that
+can be added. In total, 253 different data sources are supported. To analyse
+the collected data, Panoply offers the integration of 43 visualisation tools,
+of which 42 are BI tools.
 
-\textit{Panoply} is a full solution to sync, store and access a companies data, while also providing analytic features. Additionally to the supported visualisation tools, data can be structured and viewed in a traditional tabular form.
+Panoply is a full solution to synchronise, store and access a company's data
+while also providing analytical features. In addition to the supported
+visualisation tools, data can be structured and viewed in a traditional tabular
+form.
 
-The different pricing tiers are differentiated by three main parts: amount of data sources, storage space and support. The suggested SMB solution, called the \textit{BUSINESS} plan, includes 10 distinct data sources, 100 GB of storage and support with a reaction time of less than an hour. It also includes \textit{Data Governance} features, yet the storage itself is based in the \textit{USA}, without any other option. All plans offer an unlimited amount of users. More storage and data sources is possible for the \textit{Enterprise} plan, which is adapted to a companies needs. This adds the possibility of storing the data in one of 19 different countries.
+The different pricing tiers are differentiated by three main parts: amount of
+data sources, storage space and support. The suggested SMB solution, called the
+\textit{BUSINESS} plan, includes 10 distinct data sources, 100 GB of storage
+and support with a reaction time of less than an hour. It also includes data
+governance features, yet the storage itself is based in the USA, without any
+other option. All plans offer an unlimited amount of users. More storage and
+data sources is possible for the \textit{Enterprise} plan, which is adaptive to
+a company's needs. This adds the possibility of storing the data in one of 19
+different countries.
 
 \subsection{Tableau}
 
-\textit{Tableau} is a visualisation software which mainly focuses on data visualisation and data reporting. This tool is found by \textit{Tableau Software  Inc.} and is now owned by the Cloud Computing Solutions company \textit{Salesforce.com}. \textit{Tableau} uses a machine learning based analysis engine which helps modelling  automated structured data tables and displays statistical findings. Analytics or Business Intelligence is a cycle with different steps.
+Tableau is a visualisation software which mainly focuses on data visualisation
+and data reporting. This tool is founded by Tableau Software and is now owned
+by the cloud computing solutions company Salesforce.com. Tableau uses a
+machine-learning based analysis engine which helps model automated structured
+data tables and displays statistical findings.
 
-Transactions need to be stored securely before data analysts periodically analyse the data. Afterwards these insights are shared across the company where then senior colleagues make decisions before the outcomes get monitored from managers who change product offers. \textit{Tableau} has six key products which aim at improving the work-flow for every of the six previously mentioned cycle step by offering a simple to use, connected platform.
+Analytics or Business Intelligence is a cycle with different steps:
+Transactions need to be stored securely before data analysts periodically
+analyse the data. Afterwards, these insights are shared across the company
+where then senior colleagues make decisions before the outcomes get monitored
+from managers who change product offers. Tableau has six key products which
+aim at improving the workflow for every of the six previously mentioned steps
+by offering a simple to use, connected platform.
 
-For storing data tableau does not use a dedicated database but uses a special file type called \textit{.tde} or more recent \textit{.hyper}. Since data is not stored correctly all time due to a missing category or a wrong scanned item, these mistakes need to be fixed manually every time or in bulk periodically. The Tableau tool \textit{Tableau Prep Builder} allows users to clean, shape and prepare data by making it ease deleting, moving or even merging fields from different data sources. After cleaning data, \textit{Tableau Desktop} \& \textit{Tableau Public} connect to the clean data and are able to analyse it. \textit{Tableau Desktop} allows users to connect to basically any data source they want like Excel-Spreadsheet, billion row databases and even to a web-API. In total both \textit{Desktop} \& \textit{Public} support more than 80 different data sources including hundreds of web data connectors used to grab data from e.g. HTML, JSON \& XML.  Analysis can be done by simply drag and drop and analysts can also ask questions inside the tool and get the corresponding answer displayed as data. This really simplifies business intelligence without the need of data warehouse expertise. \textit{Tableau Public} on the other hand can do the same as the desktop version but users can only share dashboards and insights with others also using the public version - basically a community, non profit, free edition of \textit{Tableau Desktop}. After preparing and connecting to data in order to build reports, analysis can't be done by a single person. To share these across the business, it needs a tool which is safe and secure, to prevent access from others. Also collaboration between analysts and being able to withstand numerous requests should be key factors of such a tool. \textit{Tableau Server} \& \textit{Tableau Online} offer all these aspects and on top of it, in case of the first one, runs locally inside the business and the second one runs online, powered by the \textit{Tableau Cloud}. One major downside of running the server in \textit{Tableau's} cloud is the storage limitation to 100GB per site. Employees on the go can access data within the \textit{Tableau Mobile} apps. Compared to other tools \textit{Tableau} offers data visualisation out-of-the-box by dragging and dropping columns and rows into desired fields before choosing the desired visualisation type like histogram, box-and-whisker and any further combination between 30 different types are possible.
+For storing data, Tableau does not use a dedicated database but a special file
+type called \texttt{.tde} or more recent \texttt{.hyper}. Since data is not
+stored correctly all time due to a missing category or a wrong scanned item,
+these mistakes need to be fixed manually every time or in bulk periodically.
+The Tableau Prep Builder tool allows users to clean, shape and prepare data by
+making it ease to delete, move or even merge fields from different data
+sources. After cleaning data, Tableau Desktop and Tableau Public connect to the
+clean data and are able to analyse it. Tableau Desktop allows users to connect
+to basically any data source they want, like Excel spreadsheets, billion row
+databases and even web APIs. In total, both Tableau Desktop and Tableau Public
+support more than 80 different data sources including hundreds of web data
+connectors used to grab data from e.g. HTML, JSON \& XML. Analysis can be done
+by drag-and-drop and analysts can also ask questions inside the tool and get
+the corresponding answer displayed as data. This really simplifies business
+intelligence without the need of data warehouse expertise. Tableau Public on
+the other hand can do the same as the desktop version but users can only share
+dashboards and insights with others also using the public version - basically a
+community, non profit, free edition of Tableau Desktop. After preparing and
+connecting to data in order to build reports, analysis cannot be done by a
+single person, so in order to share these reports across the business, a safe
+and secure tool is needed. Also, collaboration between analysts and being able
+to withstand numerous requests should be key factors of such a tool.
+Tableau~Server and Tableau~Online offer all these aspects. The former is
+deployed on-premise while the latter is hosted on Tableau Cloud. One downside
+of Tableau Cloud which has to be considered is the storage limitation of 100GB
+per site. Employees on the go can access data within the Tableau Mobile apps.
+Tableau offers data visualisation out-of-the-box by dragging and dropping
+columns and rows into desired fields and then choosing the desired
+visualisation type, e.g. histogram, box-and-whisker and any further combination
+between 30 different types are possible.
 
-Except for \textit{Tableau Public} which is the only free version build to share data inside the Tableau-community, every other tool needs to be purchased. In this case \textit{Tableau} offers a package for individuals containing \textit{Desktop, Prep Builder \& Server} or \textit{Online} which costs \$70 per user per month. In case of teams and organisations packages are available from \textit{Viewer} to \textit{Explorer} and \textit{Creator} ranging from \$12 up to \$70 per user per month, where the first one is only basic functionality and the last one includes the full package. \\ \\
-Taking all these different packages into account the best solution for SMEs would be the \textit{Tableau Creator} package and let the \textit{Server} run in the business datacentre in order to have more storage than 100GB.
+Except for Tableau Public, which is the only free version built to share data
+in the Tableau ecosystem, every other tool needs to be purchased. In this case,
+Tableau offers a package for individuals containing Desktop, Prep Builder and
+Server or Online, which costs \$70/month per user. In case of teams and
+organisations, packages are available from \textit{Viewer} to \textit{Explorer}
+and \textit{Creator} ranging from \$12-\$70/month per user, where the first one
+contains only basic functionality and the last one includes the full package.
+
+Taking all these different packages into account, the best solution for SMEs
+would be the Tableau Creator package with Tableau Online in order to avoid
+having to manually set up and maintain a Tableau Server instance.
 
 \subsection{Snowflake}
-\textit{Snowflake} is a data warehouse solution build on top of Amazon Web Services, Microsoft Azure or Google Cloud Platform. It aims to fulfil the majority of data analytics needs, such as data storage, data processing, data integration and it provides analytic solutions. Snowflake offers multiple editions of cloud data platform service (1) Standard Edition (2) Enterprise Edition (3) Business Critical Edition (4) Virtual Private Snowflake (VPS).
-The standard  edition offers unlimited access to all standard features in the platform. Additionally the enterprise edition contains features designed especially for the needs of large-scale organisations and enterprises.
-Furthermore, the business critical edition and the virtual private snowflake edition are for organisations who are dealing with extremely sensitive data. The editions contain strict requirements and provide higher levels of data protection. Snowflake also offers a 30-day trial with \$400 worth of free usage. Before the login the user has to choose which cloud platform he wants to use.
-\\ \\
-The \textit{Snowflake} platform uses a unique architecture consisting of three layers: (1) Database Storage (2) Query Processing and (3) Cloud Services. In the database storage layer data is loaded into the platform. After the loading process the data will be optimised, compressed and stored in an cloud storage.
-\textit{Snowflake} manages all aspects on how the data is stored: the organisation, structure, metadata, statistics and many more. The data objects are then accessible through SQL query operations in the platform.
-In the query processing or virtual warehouse layer the query execution is performed. This is done by using "virtual warehouses". Each virtual warehouse is an independent compute cluster which means that each warehouse has no impact on the performance of other virtual warehouses. The warehouse comes with different sizes ranging form XS (extra small) to XXXL, depending on the organisations needs. Each size comes with different credits which is important for the pricing. Additionally the warehouses deliver efficient BI solutions with an array of BI products, in total there are 23 different BI tools. The cloud service layer is responsible for the coordination of activities across the platform, such as authentication, infrastructure management, query parsing and optimisation and metadata management.
-\\ \\
-The pricing of theses layer depends on their actual usage. Snowflake offers two different pricing options. The first one is "On Demand". Customers are charged a fixed rate for the services that are consumed and are billed every month. The second one is "Pre-Purchased Capacity". A company can pre-purchase capacity which is the consumed on a monthly basis. Furthermore \textit{Snowflake} offers an pricing overview for each cloud platform and region on their website. As an example, a standard-level data warehouse running on Amazon Web Services in the European region will cost \$2.70 per credit. And in addition one TB of on demand storage will cost \$45 per month. \\ \\
-To sum up, snowflakes data warehouse platform offers all the tools necessary to store, retrieve, analyse and process data. The platform provides good solutions for small business as well as for big organisations.
+
+Snowflake is a data warehouse solution built on top of Amazon Web Services,
+Microsoft Azure or Google Cloud Platform. It aims to fulfil the majority of
+data analytics needs, such as data storage, data processing, data integration
+and it provides analytics solutions. Snowflake offers multiple editions of
+cloud data platform service: \textit{Standard Edition},
+\textit{Enterprise Edition}, \textit{Business Critical Edition} and
+\textit{Virtual Private Snowflake (VPS)}. The \textit{Standard Edition} offers
+unlimited access to all standard features in the platform. Additionally the
+\textit{Enterprise Edition} contains features designed especially for the needs
+of large-scale organisations and enterprises. Furthermore, the
+\textit{Business Critical Edition} and the \textit{Virtual Private Snowflake}
+are for organisations who are dealing with extremely sensitive data. The
+editions contain strict requirements and provide higher levels of data
+protection. Snowflake also offers a 30-day trial with \$400 worth of free
+usage. Before the login the user has to choose which cloud platform he wants
+to use.
+
+The Snowflake platform uses a unique architecture consisting of three layers:
+database storage, query processing and cloud services. In the database storage
+layer, data is loaded into the platform. After the loading process, the data
+will be optimised, compressed and stored in cloud storage. Snowflake manages
+all aspects of how the data is stored: the organisation, structure, metadata,
+statistics and many more. The data objects are then accessible through SQL
+query operations in the platform. In the query processing or virtual warehouse
+layer, the query execution is performed. This is done by using “virtual
+warehouses”. Each virtual warehouse is an independent compute cluster which
+means that each warehouse has no impact on the performance of other virtual
+warehouses. Warehouses come in different sizes ranging from XS (extra small) to
+XXXL, depending on the organisations needs. Each size comes with different
+credits which are important for pricing. Additionally the warehouses deliver
+efficient BI solutions with an array of BI products, in total there are 23
+different BI tools. The cloud service layer is responsible for the coordination
+of activities across the platform, such as authentication, infrastructure
+management, query parsing and optimisation and metadata management.
+
+The pricing of theses layer depends on their actual usage. Snowflake offers two
+different pricing options. The first one is “On Demand”: Customers are charged
+a fixed rate for the services that are consumed and are billed every month. The
+second one is “Pre-Purchased Capacity”. A company can pre-purchase capacity
+which is then consumed on a monthly basis. Furthermore, Snowflake offers a
+pricing overview for each cloud platform and region on their website. As an
+example, a standard-level data warehouse running on Amazon Web Services in the
+European region will cost \$2.70 per credit. In addition, 1TB of on-demand
+storage costs \$45 per month.
+
+In summary, the Snowflake data warehouse platform offers all the tools
+necessary to store, retrieve, analyse and process data. The platform provides
+good solutions for small businesses as well as for big organisations.
 
 \end{document}
