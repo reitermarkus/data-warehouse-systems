@@ -24,7 +24,7 @@ article
 
 https://www.datapine.com/blog/business-intelligence-for-small-business/
 
-## A data warehouse system in business performance managanemtn in SME's
+## A data warehouse system in business performance managanemtn in SME’s
 
 scientific paper
 
