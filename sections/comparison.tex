@@ -1,0 +1,28 @@
+\documentclass[../paper.tex]{subfiles}
+
+
+\begin{document}
+    
+\subsection{Pricing}
+In this section we provide a brief overview about the pricing models provided by the four different DWaaS solutions discussed in section \ref{sec:dwh-services-for-smes}.
+\\  \\
+One big advantage of DWaaS products is that service providers configure and manage hardware and software resources, and therefore the customer only provides the data and pays for the used services.
+The four different DWaaS products reviewed in this paper offer four different pricing models. However all of them offer a free trial in order to test their platform. Table \ref{tab:pricing-models} provides an overview about the different pricing options for each DWaaS product.\\ \\
+\textit{Panoply} offers monthly and annual plans starting at \$200 per month. Their pricing model is simple: users pay for the amount of data sources and storage space they use. There are no extra costs for adding users or the number or queries run, therefore costs are more predictable than with "on-demand" models. In contrast to \textit{Panoply´s} pricing model \textit{Snowflake} offers an "on-demand" pricing option. The pricing is based on data consumption per second, which means users only pay for the compute and storage they use. This structure works well for experienced users who know their average data consumption but this could be a huge disadvantag for new users with little experience. Furthermore, \textit{Segment´s} pricing tiers are based on the number of data sources and customers that are being tracked. Furthermore \textit{Tableau} offers different packages which are only billed annually. \\ \\
+To sum up, we can conclude that fixed pricing models provide an advantage for businesses who have little experience with their average data consumption. However, it is hard to provide a best solution for all SME´s, since each business has different needs. 
+\begin{table}[]
+    \centering
+    \begin{tabular}{lllll}
+    \hline
+    \multicolumn{5}{c}{Pricing}                                                                                                                                                                                         \\ \hline
+    Panoply     & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}- monthly and annual plans starting at \$200\\ -users pay for the number of data sources and amount of data\end{tabular}}                               \\ \hline
+    Segment     & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}- pricing tiers based on number of data sources and customer or visitors \\ - users pay for the number of data sources and amount of data\end{tabular}} \\ \hline
+    Tableau     & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}- different packages starting from \$12 per user per month\\ - billed annually\end{tabular}}                                                                                                                  \\ \hline
+    Snowflake   & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}- pricing based on data consumption per second\\ - works well for experienced users\end{tabular}}                                                       \\ \hline
+    \end{tabular}
+    \caption{Overview pricing models for Panoply, Segment, Tableau and Snowflake}\
+    \label{tab:pricing-models}
+\end{table}
+
+
+\end{document}
